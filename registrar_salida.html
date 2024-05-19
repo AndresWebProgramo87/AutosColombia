@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parqueadero Autos Colombia</title>
+    <title>Registrar Salida</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
     <nav>
-        <img src="images/car.svg" alt="">
         <ul>
             <li><a href="registrar_entrada.html">Registrar Entrada</a></li>
             <li><a href="registrar_salida.html">Registrar Salida</a></li>
         </ul>
     </nav>
-    <h1>Parqueadero Autos Colombia</h1>
+    <h1>Registrar Salida</h1>
+    <form id="salida-form">
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" name="placa" required>
+        <button type="submit">Registrar Salida</button>
+    </form>
 
-    <section>
-        <img src="images/parqueadero_1.jpg" alt="">
-        <img src="images/parqueadero_2.jpg" alt="">
-    </section>
     <footer>
         <p>&copy; 2024 Autos Colombia. Todos los derechos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
