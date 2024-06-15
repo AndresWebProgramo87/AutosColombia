@@ -32,6 +32,10 @@ if ($vehiculo) {
         $stmt = $pdo->prepare("UPDATE celdas SET estado = 'disponible' WHERE id = ?");
         $stmt->execute([$id_celda]);
 
+        // Registrar el pago
+        $stmt = $pdo->prepare("INSERT INTO pagos (id_vehiculo, monto, fecha_pago) VALUES (?, ?, ?)");
+        $stmt->execute([$id_vehiculo, $costo, $hora_salida->format('Y-m-d H:i:s')]);
+
         echo "Salida registrada correctamente. Costo: $costo";
     } else {
         echo "No se encontró una entrada activa para este vehículo.";
@@ -39,4 +43,4 @@ if ($vehiculo) {
 } else {
     echo "Vehículo no encontrado.";
 }
-?>
+

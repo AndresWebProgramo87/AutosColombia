@@ -56,6 +56,9 @@ section {
     display: flex;
     justify-content: space-around;
 }
+main {
+    padding: 1em;
+}
 
 form {
     max-width: 300px;
@@ -71,7 +74,7 @@ form label {
     margin-bottom: 5px;
 }
 
-form input, form button {
+form input, form button, form select {
     width: 100%;
     padding: 8px 4px;
     margin-bottom: 10px;
@@ -119,4 +122,19 @@ footer {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#celdas div {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #333;
 }

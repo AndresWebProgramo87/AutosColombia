@@ -12,19 +12,38 @@
             <img src="images/car.svg" alt="">
         </a>
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="registrar_entrada.html">Registrar Entrada</a></li>
             <li><a href="registrar_salida.html">Registrar Salida</a></li>
+            <li><a href="consultar_estado_celdas.html">Consultar Estado de Celdas</a></li>
+            <li><a href="consultar_pagos.html">Consultar Pagos</a></li>
         </ul>
     </nav>
     
     <h1>Registrar Entrada</h1>
-    <form id="entrada-form">
-        <label for="placa">Placa:</label>
-        <input type="text" id="placa" name="placa" required>
-        <label for="tipo">Tipo:</label>
-        <input type="text" id="tipo" name="tipo" required>
-        <button type="submit">Registrar Entrada</button>
-    </form>
+    <main>
+        <form id="entrada-form">
+            <input type="text" name="nombre_usuario" placeholder="Nombre del Usuario" required>
+            <input type="text" name="identificacion" placeholder="Identificación" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+            <input type="text" name="placa" placeholder="Placa" required>
+            <select name="tipo" required>
+                <option value="" disabled selected>Seleccione el tipo de vehículo</option>
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+            </select>
+            <select name="celda" required>
+                <option value="" disabled selected>Seleccione la celda</option>
+                <!-- Las opciones de celdas disponibles se llenarán dinámicamente -->
+            </select>
+            <select name="empleado" required>
+                <option value="" disabled selected>Seleccione el empleado</option>
+                <!-- Las opciones de empleados se llenarán dinámicamente -->
+            </select>
+            <button type="submit">Registrar Entrada</button>
+        </form>
+    </main>
 
     <footer>
         <p>&copy; 2024 Autos Colombia. Todos los derechos reservados.</p>
