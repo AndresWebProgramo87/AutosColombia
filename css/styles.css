@@ -33,16 +33,17 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #333;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 8px;
 }
 
 nav ul li a {
     display: block;
-    padding: 20px 20px;
+    padding: 15px 15px;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -58,10 +59,12 @@ section {
 }
 main {
     padding: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 form {
-    max-width: 300px;
+    max-width: 500px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -106,7 +109,7 @@ footer {
     bottom: 0;
 }
 
-#resultado-salida {
+#resultado {
     max-width: 300px;
     margin: 20px auto;
     padding: 20px;
@@ -131,6 +134,12 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+}
+.button {
+    width: 18%;
+    padding: 13px 0px;
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 #celdas div {
